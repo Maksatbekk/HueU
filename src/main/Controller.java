@@ -7,7 +7,7 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import node.MyNode;
-import node.MyNode.myNodeTypes;
+import node.MyNode.MyNodeTypes;
 import window.NodeEditor;
 import window.Window;
 
@@ -42,57 +42,57 @@ public class Controller {
 
     @FXML
     void CombineOnAction() {
-        MyNode myNode = new MyNode(myNodeTypes.COMBINE_RGBA);
+        MyNode myNode = new MyNode(MyNodeTypes.COMBINE_RGBA);
         addNewMyNode(myNode);
     }
 
     @FXML
     void InputOnAction() {
-        MyNode myNode = new MyNode(myNodeTypes.INPUT);
+        MyNode myNode = new MyNode(MyNodeTypes.INPUT);
         addNewMyNode(myNode);
     }
 
     @FXML
     void OutputOnAction() {
-        MyNode myNode = new MyNode(myNodeTypes.OUTPUT);
+        MyNode myNode = new MyNode(MyNodeTypes.OUTPUT);
         addNewMyNode(myNode);
     }
 
     @FXML
     void SeparateOnAction() {
-        MyNode myNode = new MyNode(myNodeTypes.SEPARATE_RGBA);
+        MyNode myNode = new MyNode(MyNodeTypes.SEPARATE_RGBA);
         addNewMyNode(myNode);
     }
 
     @FXML
     void AddOnAction() {
-        MyNode myNode = new MyNode(myNodeTypes.MATH);
+        MyNode myNode = new MyNode(MyNodeTypes.MATHADD);
         addNewMyNode(myNode);
     }
 
     @FXML
     void SubtractOnAction() {
-        MyNode myNode = new MyNode(myNodeTypes.MATH);
+        MyNode myNode = new MyNode(MyNodeTypes.MATHSUBTRACT);
         addNewMyNode(myNode);
     }
 
     @FXML
     void MultiplyOnAction() {
-        MyNode myNode = new MyNode(myNodeTypes.MATH);
+        MyNode myNode = new MyNode(MyNodeTypes.MATHMULTIPLY);
         addNewMyNode(myNode);
     }
 
     @FXML
     void DivideOnAction() {
-        MyNode myNode = new MyNode(myNodeTypes.MATH);
+        MyNode myNode = new MyNode(MyNodeTypes.MATHDIVIDE);
         addNewMyNode(myNode);
     }
 
-    @FXML
+    /**@FXML
     void FormatterOnAction() {
-        MyNode myNode = new MyNode(myNodeTypes.MATH);
+        MyNode myNode = new MyNode(MyNodeTypes.MATh);
         addNewMyNode(myNode);
-    }
+    }**/
 
     @FXML
     private Window window = new Window();
